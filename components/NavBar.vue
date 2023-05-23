@@ -39,7 +39,7 @@ header {
   }
   img {
     max-width: 120px;
-    min-height: 50px;
+    min-height: 51px;
   }
 
   .log h3:last-child {
