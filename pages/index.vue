@@ -30,11 +30,7 @@ export default {
 </script> 
 
 <style lang="scss">
-h4 {
-  color: #e24538;
-  font-weight: 700;
-  margin: 2em 0;
-}
+
 
 a {
   &:hover {
@@ -44,6 +40,11 @@ a {
 
 .foods {
 margin-bottom: 10em;
+h4 {
+  color: #e24538;
+  font-weight: 700;
+  margin: 2em 0;
+}
   .list {
     display: flex;
     justify-content: space-around;
