@@ -18,6 +18,7 @@ export default {}
   box-sizing: border-box;
 }
 
+
 body {
   background-image: url('/background_img.jpg');
   background-repeat: no-repeat;

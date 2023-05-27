@@ -1,38 +1,53 @@
 <template>
-  <section class="daily_foods">
-    <h5>Daily Foods>></h5>
-    <div class="food_list">
-      <img src="/Good.png" alt="" srcset="" />
+  <section>
+    <div class="foods">
+      <h4>Daily Foods>></h4>
+      <div class="row list">
+        <DailyFoods />
+        <DailyFoods />
+        <DailyFoods />
+        <DailyFoods />
+      </div>
+      <div>
+        <h4>What You Wan't Now>></h4>
+        <FoodCategories />
+      </div>
+      <div>
+        <h4>Favorite Cuisine>></h4>
+        <AreaCategories />
+      </div>
     </div>
   </section>
 </template>
-  
+
+
 <script>
+
+
 export default {
-  data() {
-    return {
-      food: [1, 2, 3],
-    }
-  },
-  //   async fetch() {
-  //  let doit= await $axios.get('www.themealdb.com/api/json/v1/1/random.php')
-  //  console.log(doit);
-  //   },
-  methods: {
-    goTo(user) {
-      this.$router.push('/users/' + user)
-    },
-  },
+
 }
-</script>
-  
+</script> 
+
 <style lang="scss">
-.daily_foods {
-  margin-top: 5em;
+h4 {
+  color: #e24538;
+  font-weight: 700;
+  margin: 2em 0;
 }
 
-.food_list img {
-  width: 300px;
-  height: 300px;
+a {
+  &:hover {
+    color: #000000;
+  }
 }
-</style>
+
+.foods {
+margin-bottom: 10em;
+  .list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+</style> 
